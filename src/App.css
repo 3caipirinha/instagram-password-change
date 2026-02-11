@@ -1,0 +1,340 @@
+/* Instagram Change Password Page - Light Theme */
+
+/* Header */
+.header {
+  border-bottom: 1px solid #dbdbdb;
+  background: white;
+  padding: 12px 16px;
+}
+
+.header-content {
+  max-width: 935px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.instagram-logo {
+  width: 28px;
+  height: 28px;
+}
+
+.logo-text {
+  font-family: 'Instagram Sans Script', cursive, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #feda75 0%, #fa7e1e 25%, #d62976 50%, #962fbf 75%, #4f5bd5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-login {
+  padding: 8px 16px;
+  background: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-login:hover {
+  background: #0077c2;
+}
+
+.btn-signup {
+  padding: 8px 16px;
+  background: transparent;
+  color: #0095f6;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.btn-signup:hover {
+  color: #0077c2;
+}
+
+/* Main Content */
+main {
+  background: #fafafa;
+}
+
+/* Password Card */
+.password-card {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 32px 24px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .password-card {
+    border: none;
+    background: transparent;
+    padding: 24px 16px;
+  }
+}
+
+/* Icon */
+.icon-container {
+  margin-bottom: 20px;
+}
+
+.lock-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #feda75 0%, #fa7e1e 50%, #d62976 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: white;
+}
+
+/* Title */
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.description {
+  font-size: 14px;
+  color: #737373;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Input Group */
+.input-group {
+  width: 100%;
+  text-align: left;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input {
+  width: 100%;
+  padding: 12px 44px 12px 16px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #262626;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.password-input::placeholder {
+  color: #8e8e8e;
+}
+
+.password-input:focus {
+  border-color: #a8a8a8;
+  background: white;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #8e8e8e;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.toggle-password:hover {
+  color: #262626;
+}
+
+/* Error Text */
+.error-text {
+  font-size: 12px;
+  color: #ed4956;
+  margin-top: 6px;
+  margin-left: 4px;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+  margin-top: 8px;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: #0077c2;
+}
+
+.submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Back Link */
+.back-link {
+  margin-top: 24px;
+}
+
+.back-link a {
+  color: #0095f6;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.back-link a:hover {
+  color: #0077c2;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background: #fafafa;
+  padding: 24px 16px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 16px;
+  margin-bottom: 16px;
+}
+
+.footer-links a {
+  color: #737373;
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #262626;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #737373;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.copyright {
+  color: #737373;
+  font-size: 12px;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 12px;
+  }
+  
+  .logo-text {
+    font-size: 20px;
+  }
+  
+  .btn-login,
+  .btn-signup {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  
+  .title {
+    font-size: 18px;
+  }
+  
+  .description {
+    font-size: 13px;
+  }
+}
+
+/* Success Message Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out;
+}
